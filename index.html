@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+</html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto X-Men - Semana do Zero Ao Programador Contratado</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- Esse link foi extraído do google fontes, são 3 fontes do oxanium -->
+
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/estilos.css">
+    <link rel="stylesheet" href="./src/css/responsivo.css">
+</head>
+
+<body>
+    <header class="cabecalho">
+        <img class="logo" src="./src/imagens/logo.svg" alt="Logo X-Men">
+    </header>
+    <!-- tag header é feita para um cabeçalho. Poderia ser div. mas header é uma semântica melhor. -->
+    <!-- Dentro do nome da class não pode por acento -->
+    <main class="selecao-de-personagens">
+        <section class="personagens">
+            <h1 class="titulo" >Selecione um personagem</h1>
+            <ul class="lista-de-personagens">
+                <li class="personagem selecionado" id="ciclope" data-name="Ciclope" data-description ="Ele tem o poder de disparar rajadas ópticas.
+                Isto ocorre devido a um acidente que aconteceu com ele quando ainda criança. Ciclope tem dificuldade
+                de controlar os raios.">
+                    <img src="./src/imagens/card-ciclope.jpg" alt="Personagem Ciclope">
+                </li>
+                <li class="personagem" id="jean-grey" data-name="Jean Grey" data-description = "Jean Grey é uma mutante com habilidades telepáticas e telecinéticas extremamente poderosas. Ela é considerada uma das mutantes mais fortes do universo Marvel. Sua conexão com a Força Fênix, uma entidade cósmica de energia, amplifica os poderes de Jean e também traz à tona sua personalidade mais sombria e destrutiva.">
+                    <img src="./src/imagens/card-jean-grey.jpg" alt="Personagem Jean Grey">
+                </li>
+                <li class="personagem" id="lince-negra" data-name="Lince Negra" data-description ="Lince Negra é uma mutante dos X-Men com a capacidade de se tornar intangível, atravessando objetos sólidos.">
+                    <img src="./src/imagens/card-lince-negra.jpg" alt="Personagem Lince Negra">
+                </li>
+                <li class="personagem" id="tempestade" data-name="Tempestade"data-description ="Tempestade é uma mutante dos X-Men com o poder de controlar o clima. Ela pode manipular elementos naturais, como vento, chuva, relâmpagos e até mesmo criar tempestades poderosas.">
+                    <img src="./src/imagens/card-tempestade.jpg" alt="Personagem Tempestade">
+                </li>
+                <li class="personagem" id="vampira" data-name="Vampira"data-description ="Vampira é uma mutante dos X-Men com a habilidade de absorver a força vital, os poderes e as memórias de outras pessoas através do toque. Ela luta para controlar sua sede de absorver energia vital e manter seus relacionamentos pessoais.">
+                    <img src="./src/imagens/card-vampira.jpg" alt="Personagem Vampira">
+                </li>
+                <li class="personagem" id="wolverine" data-name="Wolverine"data-description ="Ele possui habilidades regenerativas, garras retráteis de adamantium e sentidos aguçados. Wolverine é conhecido por sua personalidade durona, atitude feroz e natureza solitária.">
+                    <img src="./src/imagens/card-wolverine.jpg" alt="Personagem Wolverine">
+                </li>
+                <li class="personagem" id="noturno" data-name="Noturno"data-description ="Ele possui a capacidade de se teletransportar instantaneamente de um local para outro, deixando para trás uma fumaça característica. Ele é um acrobata habilidoso e tem a capacidade de aderir a superfícies verticais.">
+                    <img src="./src/imagens/card-noturno.jpg" alt="Personagem Noturno">
+                </li>
+                <li class="personagem" id="magneto" data-name="Magneto"data-description ="Ele é um mutante com o poder de manipular campos magnéticos e controlar metais. Magneto acredita na supremacia mutante e é conhecido por suas visões extremistas de proteger sua espécie, muitas vezes entrando em conflito com os X-Men e outros heróis.">
+                    <img src="./src/imagens/card-magneto.jpg" alt="Personagem Magneto">
+                </li>
+            </ul>
+        </section>
+
+        <!-- tag que divide as seções -->
+        <section class="personagem-selecionado">
+            <img class="personagem-grande" src="./src/imagens/card-ciclope.png" alt="Personagem Selecionado">
+            <div class="informacoes-personagens">
+                <h2 class="nome-personagem" id="nome-personagem">Ciclope</h2>
+                <p class="descricao-personagem" id="descricao-personagem">Ele tem o poder de disparar rajadas ópticas.
+                    Isto ocorre devido a um acidente que aconteceu com ele quando ainda criança. Ciclope tem dificuldade
+                    de controlar os raios.</p>
+            </div>
+        </section>
+    </main>
+    <script src="./src/js/index.js"></script>
+    <!-- Outra tag para posicionar o conteúdo -->
+</body>
+
+</html>
